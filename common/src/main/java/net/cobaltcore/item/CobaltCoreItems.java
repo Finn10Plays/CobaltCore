@@ -1,5 +1,6 @@
 package net.cobaltcore.item;
 
+import net.cobaltcore.CobaltCore;
 import net.minecraft.Util;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -16,10 +17,10 @@ import net.threetag.palladiumcore.registry.RegistrySupplier;
 
 import java.util.EnumMap;
 
-public class PalladiumItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Palladium.MOD_ID, Registries.ITEM);
+public class CobaltCoreItems {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(CobaltCore.MOD_ID, Registries.ITEM);
 
-    // Blocks ---------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------
 
     public static final RegistrySupplier<Item> COMET_STONE = ITEMS.register("comet_stone", () -> new BlockItem(PalladiumBlocks.COMET_STONE.get(), new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistrySupplier<Item> COBBLED_COMET_STONE = ITEMS.register("cobbled_comet_stone", () -> new BlockItem(PalladiumBlocks.COBBLED_COMET_STONE.get(), new Item.Properties().rarity(Rarity.RARE)));
@@ -43,7 +44,7 @@ public class PalladiumItems {
     public static final RegistrySupplier<Item> ROBRIENTINE_BLOCK = ITEMS.register("robrientine_block", () -> new BlockItem(PalladiumBlocks.ROBRIENTINE_BLOCK.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> RAW_ROBRIENTINE_BLOCK = ITEMS.register("raw_robrientine_block", () -> new BlockItem(PalladiumBlocks.RAW_ROBRIENTINE_BLOCK.get(), new Item.Properties()));
 
-    // Items ----------------------------------------------------------------------------------------------------------
+    // ----------------------------------------------------------------------------------------------------------
 
     public static final RegistrySupplier<Item> RAW_STEEL = ITEMS.register("raw_steel", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
