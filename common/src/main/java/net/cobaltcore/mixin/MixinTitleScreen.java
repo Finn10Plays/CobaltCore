@@ -1,4 +1,4 @@
-package net.examplemod.mixin;
+package net.cobaltcore.mixin;
 
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -11,7 +11,7 @@ public class MixinTitleScreen {
 
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        System.out.println("Hello from example palladiumcore common mixin!");
+        System.out.println("Powered by Cobalt!");
     }
 
 }
